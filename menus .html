@@ -1,0 +1,115 @@
+
+<div class="box">
+    <dev>    
+       <h4 class="marquee"><span>mzware.xyz best hack</span></h4>
+    </dev>
+</div>
+<script type="text/javascript">
+  var pass = prompt('Invate code!');
+
+if(pass == '1337') {
+alert('Welcome Home');
+} else if(pass == null){
+window.location.href = 'https://www.google.ru';
+} else {
+alert('bad code');
+window.location.href = 'https://www.google.ru';
+}
+
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+ 
+@-moz-keyframes scroll {
+    0% {
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -moz-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+ 
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+}
+ 
+.marquee {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+ 
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    -webkit-animation: scroll 5s infinite linear;
+    -moz-animation: scroll 5s infinite linear;
+    animation: scroll 5s infinite linear;
+}
+
+dev {
+font-family: 'Orbitron', sans-serif;
+color: blue;
+}
+h4 {
+position: relative;
+/*  стили для сдвига элементов вверх и влево на 5px */
+top: 5px;
+left: 5px;
+}
+
+.box {
+  --border-size: 5px;
+  --border-angle: 0turn;
+  width: 100vmin;
+  height: 80vmin;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 50%,
+      #213
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  animation: bg-spin 3s linear infinite;
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+</style>
